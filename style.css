@@ -125,7 +125,7 @@ audio {
     left: 5px;
 }
 
-#more {
+.more {
     text-decoration: none;
     background-color: #590242;
     color: #ffffff;
@@ -138,12 +138,12 @@ audio {
     margin-left: 15px;
 }
 
-#more:hover {
+.more:hover {
     background-color: #020659;
 }
 
 
-#all_playlists {
+/*#all_playlists {
     text-decoration: none;
     background-color: #590242;
     color: #ffffff;
@@ -154,7 +154,7 @@ audio {
     display: block;
     text-align: center;
     margin-left: 15px;
-}
+} */
 
 #all_playlists:hover {
     background-color: #020659;
