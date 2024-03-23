@@ -132,12 +132,31 @@ audio {
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
-    width: 150px;
+    width: 200px;
     display: block;
     text-align: center;
+    margin-left: 15px;
 }
 
 #more:hover {
+    background-color: #020659;
+}
+
+
+#all_playlists {
+    text-decoration: none;
+    background-color: #590242;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin-left: 15px;
+}
+
+#all_playlists:hover {
     background-color: #020659;
 }
 
