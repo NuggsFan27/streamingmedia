@@ -46,6 +46,10 @@ table {
     border-spacing: 0;
 }
 
+@media screen and (max-width: 834px){
+    
+}
+
 html {
     background-color: #020659;
 }
@@ -59,6 +63,11 @@ body {
 header{
     background: linear-gradient(#2104D9, #000000);
     color: #ffffff;
+    line-height: 1.25em;
+}
+
+header p {
+    padding: 5px;    
 }
 
 h1 {
@@ -105,9 +114,26 @@ h2 {
     padding: 15px;
 }
 
-#playlists section{
+#playlists section {
     display: grid;
     background-color: #0D8DF8;
+    text-align: center;
+}
+
+#curated {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #030A8C;
+    color: #ffffff;
+    gap: 1em;
+    padding: 15px;
+}
+
+#curated section {
+    display: grid;
+    background-color: #2104D9;
     text-align: center;
 }
 
