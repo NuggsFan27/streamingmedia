@@ -125,20 +125,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        color: #ffffff;
-        text-decoration: none;
-    }
-    label span, input {
-        display: none;
-    }
-}
 
 header{
     background: linear-gradient(#2104D9, #000000);
@@ -301,4 +287,50 @@ footer p {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
+}
+
+@media screen and (min-width: 834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    label span, input {
+        display: none;
+    }
+
+    body {
+        width: 834px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .more {
+        float: right;
+        padding-right: 10px;
+    }
+
+    #playlists, #curated{
+        display: grid;
+        overflow-y: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "header"
+                              "main"   "main"
+                              "footer" "footer";
+        overflow: hidden;
+    }
+
+    #playlists img {
+        float: left;
+    }
+
+    #playlists h3, p {
+        text-align: right;
+    }
+
 }
