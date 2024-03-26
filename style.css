@@ -93,6 +93,7 @@ label span {
     transition: background-color .2s ease-out;
     width: 18px;
 }
+
 label span:before, label span:after {
     background: #ffffff;
     content: '';
@@ -338,6 +339,7 @@ footer p {
     }
 
     #playlists section {
+        
     }
 
     #playlists img {
