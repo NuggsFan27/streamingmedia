@@ -60,7 +60,17 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    columns: 1fr 1fr 1fr 1fr;
 }
+
+nav {
+    order: -1;
+    background-color: #020659;
+    text-decoration: none;
+}
+
 
 ul {
     overflow: hidden;
@@ -303,34 +313,50 @@ footer p {
         display: none;
     }
 
+    nav {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
     body {
         width: 834px;
         margin: 0 auto;
         background-color: #ffffff;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    
-    .more {
-        float: right;
-        padding-right: 10px;
+
+    #playlists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
-    #playlists, #curated{
-        display: grid;
-        overflow-y: auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "header"
-                              "main"   "main"
-                              "footer" "footer";
-        overflow: hidden;
+    #playlists h3 {
+        grid-row: 1;
+    }
+
+    #playlists section {
     }
 
     #playlists img {
         float: left;
     }
 
-    #playlists h3, p {
-        text-align: right;
+    .more {
+        grid-row: 3;
+    }
+
+    #curated {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #curated  {
+        grid-row: 1 , 2;
     }
 
 }
