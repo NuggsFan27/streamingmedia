@@ -71,6 +71,19 @@ nav {
     text-decoration: none;
 }
 
+[href="#home"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 16px 16px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
 
 ul {
     overflow: hidden;
