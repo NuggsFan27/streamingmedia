@@ -62,13 +62,16 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
-    columns: 1fr 1fr 1fr 1fr;
 }
 
 nav {
     order: -1;
     background-color: #020659;
     text-decoration: none;
+}
+
+nav h2{
+    display: none;
 }
 
 [href="#home"] {
@@ -227,6 +230,19 @@ h2 {
     text-align: center;
 }
 
+#moreTrending {
+    text-decoration: none;
+    background-color: #590242;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin-left: 15px;
+}
+
 dl {
     display: flex;
 }
@@ -340,38 +356,64 @@ footer p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    #playlists {
+    #myPlaylists {
         display: grid;
         grid-template-columns: 1fr 1fr;
         overflow-y: scroll;
         overflow-x: hidden;
+        flex-direction: column;
+        border-top: 10px;
+        border-bottom: 10px;
     }
 
-    #playlists h3 {
-        grid-row: 1;
-    }
-
-    #playlists section {
-        
-    }
-
-    #playlists img {
-        float: left;
-    }
-
-    .more {
-        grid-row: 3;
+    #playlists {
+        display: flex;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        flex-direction: column;
+        height: 458px;
+        grid-row: 1/2;
     }
 
     #curated {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         overflow-y: scroll;
         overflow-x: hidden;
+        flex-direction: column;
+        height: 458px;
+        grid-row: 2/-1;
     }
 
-    #curated  {
-        grid-row: 1 , 2;
+    #curated img {
+        float: left;
+    }    
+
+    p {
+        float: right;
     }
 
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    aside h2{
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    #moreTrending {
+        float: right;
+        text-decoration: none;
+        background-color: #590242;
+        color: #ffffff;
+    }
+
+    footer {
+        font-size: .75em;
+        color: #590242;
+        text-align: center;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;
+    }
 }
